@@ -9,6 +9,7 @@ var f = -1;
 var g = -1;
 var h = -1;
 var i = -1;
+var total=9;
 $(".container").click(function() {
   $(".header").text("Click here to restart.");
   $(".header").addClass("refresh");
@@ -70,6 +71,11 @@ $(".box").click(function() {
     alert("O won the match");
     location.reload();
   }
+  total--;
+  if(total===0){
+    alert("it's a draw");
+    location.reload();
+  }
 })
 
 $("h1").click(function() {
@@ -78,3 +84,4 @@ $("h1").click(function() {
   }
 
 })
+
