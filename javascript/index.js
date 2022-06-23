@@ -9,7 +9,7 @@ var f = -1;
 var g = -1;
 var h = -1;
 var i = -1;
-var total=9;
+var total = 9;
 $(".container").click(function() {
   $(".header").text("Click here to restart.");
   $(".header").addClass("refresh");
@@ -65,15 +65,24 @@ $(".box").click(function() {
   x++;
   $(this).css("pointer-events", "none");
   if ((a == 1 && b == 1 && c == 1) || (d == 1 && e == 1 && f == 1) || (g == 1 && h == 1 && i == 1) || (a == 1 && d == 1 && g == 1) || (b == 1 && e == 1 && h == 1) || (c == 1 && f == 1 && i == 1) || (a == 1 && e == 1 && i == 1) || (c == 1 && e == 1 && g == 1)) {
-    alert("X won the match");
+
+    setTimeout(function() {
+      alert("X won the match"), 1500
+    })
     location.reload();
   } else if ((a == 0 && b == 0 && c == 0) || (d == 0 && e == 0 && f == 0) || (g == 0 && h == 0 && i == 0) || (a == 0 && d == 0 && g == 0) || (b == 0 && e == 0 && h == 0) || (c == 0 && f == 0 && i == 0) || (a == 0 && e == 0 && i == 0) || (c == 0 && e == 0 && g == 0)) {
-    alert("O won the match");
+
+    setTimeout(function() {
+      alert("O won the match"), 1500
+    })
     location.reload();
   }
   total--;
-  if(total===0){
-    alert("it's a draw");
+  if (total === 0) {
+
+    setTimeout(function() {
+      alert("it's a draw"), 1500
+    })
     location.reload();
   }
 })
@@ -84,4 +93,3 @@ $("h1").click(function() {
   }
 
 })
-
