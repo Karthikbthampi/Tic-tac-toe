@@ -1,0 +1,78 @@
+body{
+  color:white;
+  text-align: center;
+  font-family: 'Rubik Moonrocks', cursive;
+  height: 100%;
+  position: relative;
+}
+html{
+  height: 100%;
+}
+h1{
+  font-size: 3rem;
+}
+.bg{
+height: 100%;
+width: 100%;
+background-size: cover;
+position: absolute;
+z-index: -1;
+filter:blur(5px);
+
+}
+.box{
+  display: inline;
+  height:175px;
+  width:175px;
+  border-color: #ffffff;
+  border-style: solid;
+
+}
+.rc11{
+  border-width: 0 5px 5px 0;
+  border-style: solid;
+}
+.rc12{
+  border-width: 0 5px 5px 5px;
+}
+.rc13{
+  border-width: 0 0 5px 5px ;
+}
+.rc21{
+  border-width: 5px 5px 5px 0;
+}
+.rc22{
+  border-width:  5px 5px ;
+}
+.rc23{
+  border-width:5px 0 5px 5px ;
+}
+.rc31{
+  border-width:5px 5px 0 0;
+}
+.rc32{
+  border-width:5px 5px 0 5px;
+}
+.rc33{
+  border-width: 5px 0 0 5px ;
+}
+.middle{
+  height:175px;
+}
+.bottom{
+  height:175px;
+}
+.container{
+  width:525px;
+}
+.box:hover{
+  background-color: #ebe9e8;
+  opacity: 10%;
+  cursor:pointer;
+}
+.refresh:hover{
+  cursor:pointer;
+}
+.header:hover{
+  cursor:default;
+}
