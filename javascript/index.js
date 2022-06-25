@@ -10,6 +10,7 @@ var g = -1;
 var h = -1;
 var i = -1;
 var total = 9;
+var win =0;
 $(".container").click(function() {
   $(".header").text("Click here to restart.");
   $(".header").addClass("refresh");
@@ -66,24 +67,39 @@ $(".box").click(function() {
   $(this).css("pointer-events", "none");
   if ((a == 1 && b == 1 && c == 1) || (d == 1 && e == 1 && f == 1) || (g == 1 && h == 1 && i == 1) || (a == 1 && d == 1 && g == 1) || (b == 1 && e == 1 && h == 1) || (c == 1 && f == 1 && i == 1) || (a == 1 && e == 1 && i == 1) || (c == 1 && e == 1 && g == 1)) {
 
-    setTimeout(function() {
-      alert("X won the match"), 1500
-    })
-    location.reload();
+    // setTimeout(function() {
+    //   alert("X won the match"), 2500
+    // })
+    // location.reload();
+    $(".bg1").removeClass("blah");
+    $(".divi").removeClass("blah");
+    $("h3").text("Player X wins");
+    $("h1").addClass("result");
+    $(".container").addClass("result");
+    $("h1").css("pointer-events","none");
+    $(".box").css("pointer-events","none");
+    win=1;
   } else if ((a == 0 && b == 0 && c == 0) || (d == 0 && e == 0 && f == 0) || (g == 0 && h == 0 && i == 0) || (a == 0 && d == 0 && g == 0) || (b == 0 && e == 0 && h == 0) || (c == 0 && f == 0 && i == 0) || (a == 0 && e == 0 && i == 0) || (c == 0 && e == 0 && g == 0)) {
 
-    setTimeout(function() {
-      alert("O won the match"), 1500
-    })
-    location.reload();
+    $(".bg1").removeClass("blah");
+    $(".divi").removeClass("blah");
+    $("h3").text("Player O wins");
+    $("h1").addClass("result");
+    $(".container").addClass("result");
+    $("h1").css("pointer-events","none");
+    $(".box").css("pointer-events","none");
+    win=1;
   }
   total--;
-  if (total === 0) {
+  if (total === 0 && win===0) {
 
-    setTimeout(function() {
-      alert("it's a draw"), 1500
-    })
-    location.reload();
+    $(".bg1").removeClass("blah");
+    $(".divi").removeClass("blah");
+    $("h3").text("It's a draw");
+    $("h1").addClass("result");
+    $(".container").addClass("result");
+    $("h1").css("pointer-events","none");
+    $(".box").css("pointer-events","none");
   }
 })
 
