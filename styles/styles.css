@@ -1,78 +1,157 @@
-body{
-  color:white;
+body {
+  color: white;
   text-align: center;
   font-family: 'Rubik Moonrocks', cursive;
   height: 100%;
   position: relative;
 }
-html{
+
+html {
   height: 100%;
 }
-h1{
+
+h1 {
   font-size: 3rem;
 }
-.bg{
-height: 100%;
-width: 100%;
-background-size: cover;
-position: absolute;
-z-index: -1;
-filter:blur(5px);
 
+.bg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  z-index: -2;
+  filter: blur(5px);
 }
-.box{
+
+.box {
   display: inline;
-  height:175px;
-  width:175px;
+  height: 175px;
+  width: 175px;
   border-color: #ffffff;
   border-style: solid;
-
 }
-.rc11{
+
+.rc11 {
   border-width: 0 5px 5px 0;
   border-style: solid;
 }
-.rc12{
+
+.rc12 {
   border-width: 0 5px 5px 5px;
 }
-.rc13{
-  border-width: 0 0 5px 5px ;
+
+.rc13 {
+  border-width: 0 0 5px 5px;
 }
-.rc21{
+
+.rc21 {
   border-width: 5px 5px 5px 0;
 }
-.rc22{
-  border-width:  5px 5px ;
+
+.rc22 {
+  border-width: 5px 5px;
 }
-.rc23{
-  border-width:5px 0 5px 5px ;
+
+.rc23 {
+  border-width: 5px 0 5px 5px;
 }
-.rc31{
-  border-width:5px 5px 0 0;
+
+.rc31 {
+  border-width: 5px 5px 0 0;
 }
-.rc32{
-  border-width:5px 5px 0 5px;
+
+.rc32 {
+  border-width: 5px 5px 0 5px;
 }
-.rc33{
-  border-width: 5px 0 0 5px ;
+
+.rc33 {
+  border-width: 5px 0 0 5px;
 }
-.middle{
-  height:175px;
+
+.middle {
+  height: 175px;
 }
-.bottom{
-  height:175px;
+
+.bottom {
+  height: 175px;
 }
-.container{
-  width:525px;
+
+.container {
+  width: 525px;
 }
-.box:hover{
-  background-color: #ebe9e8;
-  opacity: 10%;
-  cursor:pointer;
+
+
+
+.refresh:hover {
+  cursor: pointer;
 }
-.refresh:hover{
-  cursor:pointer;
+
+.header:hover {
+  cursor: default;
 }
-.header:hover{
-  cursor:default;
+
+.result {
+  filter: blur(8px);
+}
+
+/* pop up */
+body html {
+  height: 100%;
+}
+
+.bg1 {
+  background-image: linear-gradient(to bottom right, #000000, #a6a6a6);
+  border-color: white;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  border-style: solid;
+}
+
+.divi, .bg1 {
+  height: 30%;
+  width: 35%;
+  margin: 17.5% 35%;
+  border-radius: 12.5%;
+  animation-name: pop-up;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+@keyframes pop-up {
+  from {
+
+    opacity: 0%;
+  }
+
+  to {
+
+    opacity: 80%;
+  }
+}
+
+.divi1 {
+  position: absolute;
+  z-index: 4;
+}
+
+h2, h3 {
+  text-align: center;
+  color: white;
+}
+
+hr {
+  height: 5px;
+}
+
+.blah {
+  display: none;
+}
+@media(min-width:500px){
+  .box:hover {
+    background-color: #ebe9e8;
+    opacity: 10%;
+    cursor: pointer;
+  }
 }
