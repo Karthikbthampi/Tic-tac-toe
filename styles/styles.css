@@ -148,7 +148,7 @@ hr {
 .blah {
   display: none;
 }
-@media(min-width:500px){
+@media(min-width:356px){
   .box:hover {
     background-color: #ebe9e8;
     opacity: 10%;
