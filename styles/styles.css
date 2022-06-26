@@ -8,7 +8,6 @@ body {
 
 html {
   height: 100%;
-  width:100%;
 }
 
 h1 {
@@ -18,7 +17,7 @@ h1 {
 .bg {
   height: 100%;
   width: 100%;
-  background-size: cover;
+
   position: absolute;
   z-index: -2;
   filter: blur(5px);
@@ -98,18 +97,19 @@ h1 {
 /* pop up */
 body html {
   height: 100%;
+  width: 100%
 }
 
 .bg1 {
   background-image: linear-gradient(to bottom right,#780206, #061161);
   border-color: white;
-  position: absolute;
   top: 0;
   z-index: 2;
   border-style: solid;
 }
 
 .divi, .bg1 {
+  position: absolute;
   height: 30%;
   width: 35%;
   margin: 17.5% 35%;
@@ -128,7 +128,7 @@ body html {
 
   to {
 
-    opacity: 87%;
+    opacity: 85%;
   }
 }
 
@@ -154,5 +154,8 @@ hr {
     background-color: #ebe9e8;
     opacity: 10%;
     cursor: pointer;
+  }
+  .bg{
+      background-size: cover;
   }
 }
